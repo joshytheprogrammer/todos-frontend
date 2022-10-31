@@ -2,3 +2,16 @@ $primary: #700353;
 $light: #FFFBFC;
 $dark: #010400;
 
+$small: 425px;
+$s-medium: 528px;
+$medium: 768px;
+$m-large: 992px;
+$large: 1200px;
+$x-large: 1440px;
+$xx-large: 2560px;
+
+html,
+body  {
+  background: $light;
+  overflow-x: hidden;
+}
