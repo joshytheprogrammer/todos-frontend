@@ -50,9 +50,9 @@ export default {
   height: 500px;
 
   margin: 2rem auto;
-  padding: 2rem 0;
+  padding: 2rem;
 
-  border: 2px solid $dark;
+  border: 1px solid $dark;
   box-shadow: 0px 4px 4px $dark;
   border-radius: 10px;
 
