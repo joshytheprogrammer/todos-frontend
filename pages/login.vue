@@ -4,14 +4,14 @@
     <form @submit.prevent="userLogin">
       <div class="form-group">
         <label>Username</label>
-        <input type="text" v-model="login.username" />
+        <input type="text" v-model="login.username" placeholder="Enter your username" />
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" v-model="login.password" />
+        <input type="password" v-model="login.password" placeholder="Enter your password" />
       </div>
       <div class="btn">
-        <button type="submit">Submit</button>
+        <button type="submit">Login</button>
       </div>
     </form>
   </div>
@@ -65,7 +65,7 @@ export default {
 
   form {
     display: block;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     .form-group {
       display: block;
@@ -74,8 +74,8 @@ export default {
       label {
         display: inline-block;
 
-        font-weight: 400;
-        font-size: 14px;
+        font-weight: 500;
+        font-size: 16px;
         padding: 0.75rem 0;
       }
 
@@ -86,14 +86,17 @@ export default {
         border-radius: 10px;
 
         outline: none;
-        border: 1px solid $dark;
+        border: 1.8px solid $dark;
         border-radius: 4px;
-        padding: 0 0 0 0.2rem;
-        margin-bottom: 1rem;
+        padding: 0 0 0 0.4rem;
         transition: background .2s linear, outline .1s ease-in-out;
 
         font-size: 16px;
         font-weight: 400;
+
+        &::placeholder {
+          color: $dark;
+        }
       }
     }
 
