@@ -7,14 +7,21 @@
   border: none;
   cursor: pointer;
   border-radius: 10px;
-
-  // &:hover {
-
-  // }
 }
 
-@mixin form {
+@mixin input {
+  width: 100%;
+  height: 48px;
 
+  border-radius: 10px;
+
+  outline: none;
+  border: 1.4px solid $dark;
+  border-radius: 10px;
+  padding: 0 0 0 0.4rem;
+
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @mixin display-1 {

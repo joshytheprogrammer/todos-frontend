@@ -81,18 +81,7 @@ export default {
       }
 
       input {
-        width: 100%;
-        height: 48px;
-
-        border-radius: 10px;
-
-        outline: none;
-        border: 1.4px solid $dark;
-        border-radius: 10px;
-        padding: 0 0 0 0.4rem;
-
-        font-size: 16px;
-        font-weight: 400;
+        @include input;
 
         &::placeholder {
           color: $dark;
@@ -114,7 +103,6 @@ export default {
 
     button {
       @include btn;
-
     }
 
     p {
