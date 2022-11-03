@@ -76,12 +76,13 @@ export default {
         display: inline-block;
 
         font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         padding: 0.75rem 0;
       }
 
       input {
         @include input;
+        font-size: 14px;
 
         &::placeholder {
           color: $dark;
