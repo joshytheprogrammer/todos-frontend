@@ -120,7 +120,20 @@ export default {
   }
 
   @media screen and (max-width: $small) {
+    h1 {
+      font-size: 24px;
+    }
 
+    .submit-line {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      p {
+        display: block;
+        padding: 0.6rem 0;
+      }
+    }
   }
 }
 </style>
