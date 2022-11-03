@@ -64,6 +64,14 @@ export default {
   form {
     display: block;
 
+    .form-group {
+      display: block;
+
+      label {
+        display: inline-block;
+      }
+    }
+
   }
 }
 </style>
