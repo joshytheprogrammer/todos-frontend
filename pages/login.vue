@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>Welcome back 👋</h1>
     <form @submit.prevent="userLogin">
       <div>
         <label>Username</label>
@@ -41,13 +42,22 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  display: block;
+
+  width: 400px;
+  max-width: 90%;
+
+  height: 500px;
+
+  margin: 2rem auto;
+  padding: 2rem 0;
+
+  border: 2px solid $dark;
+  box-shadow: 0px 4px 4px $dark;
+  border-radius: 10px;
 
   form {
-    border: 1px solid $dark;
+    display: block;
   }
 }
 </style>
