@@ -70,7 +70,7 @@ export default {
 
     .form-group {
       display: block;
-      padding: 1rem 0;
+      padding-top: 1rem;
 
       label {
         display: inline-block;
