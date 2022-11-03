@@ -40,5 +40,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 
+  form {
+    border: 1px solid $dark;
+  }
+}
 </style>
