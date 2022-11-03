@@ -49,7 +49,7 @@ export default {
   width: 400px;
   max-width: 90%;
 
-  height: 500px;
+  height: fit-content;
 
   margin: 2rem auto;
   padding: 2rem 1rem;
@@ -73,11 +73,27 @@ export default {
 
       label {
         display: inline-block;
+
+        font-weight: 400;
+        font-size: 14px;
+        padding: 0.75rem 0;
       }
 
       input {
         width: 100%;
-        height: 40px;
+        height: 48px;
+
+        border-radius: 10px;
+
+        outline: none;
+        border: 1px solid $dark;
+        border-radius: 4px;
+        padding: 0 0 0 0.2rem;
+        margin-bottom: 1rem;
+        transition: background .2s linear, outline .1s ease-in-out;
+
+        font-size: 16px;
+        font-weight: 400;
       }
     }
 
