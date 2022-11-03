@@ -50,11 +50,16 @@ export default {
   height: 500px;
 
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 
   border: 1px solid $dark;
   box-shadow: 0px 4px 4px $dark;
   border-radius: 10px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
 
   form {
     display: block;
