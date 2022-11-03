@@ -12,7 +12,7 @@
       </div>
       <div class="submit-line">
         <button type="submit">Login</button>
-        <p> Don't have an account? <NutLink to="/register">Register</NutLink></p>
+        <p> Don't have an account? <NuxtLink to="/register">Register</NuxtLink></p>
       </div>
     </form>
   </div>
@@ -90,13 +90,16 @@ export default {
         border: 1.4px solid $dark;
         border-radius: 10px;
         padding: 0 0 0 0.4rem;
-        transition: background .2s linear, outline .1s ease-in-out;
 
         font-size: 16px;
         font-weight: 400;
 
         &::placeholder {
           color: $dark;
+        }
+
+        &:focus {
+          border-color: $primary;
         }
       }
     }
@@ -110,20 +113,22 @@ export default {
     padding-top: 2rem;
 
     button {
-      padding: 0.85rem 2rem;
-
-      color: $light;
-      background: $primary;
-
-      border: none;
-      cursor: pointer;
-      border-radius: 10px;
+      @include btn;
 
     }
 
     p {
       font-size: 14px;
       font-weight: 500;
+
+      a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
 
