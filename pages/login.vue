@@ -117,7 +117,9 @@ export default {
         }
       }
     }
+  }
 
+  @media screen and (max-width: $small) {
 
   }
 }
