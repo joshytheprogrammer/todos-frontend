@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <form @submit.prevent="userLogin">
       <div>
         <label>Username</label>
@@ -38,3 +38,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
