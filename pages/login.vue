@@ -128,6 +128,7 @@ export default {
       flex-direction: column-reverse;
       justify-content: flex-start;
       align-items: flex-start;
+      padding-top: 1rem;
 
       p {
         display: block;
