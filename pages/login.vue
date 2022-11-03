@@ -10,7 +10,7 @@
         <label>Password</label>
         <input type="password" v-model="login.password" placeholder="Enter your password" />
       </div>
-      <div class="btn">
+      <div class="submit-line">
         <button type="submit">Login</button>
       </div>
     </form>
@@ -98,6 +98,17 @@ export default {
           color: $dark;
         }
       }
+    }
+
+  }
+
+  .submit-line {
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    button {
+      padding: 0.65rem 2rem;
     }
 
   }
