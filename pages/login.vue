@@ -108,7 +108,14 @@ export default {
     padding-top: 2rem;
 
     button {
-      padding: 0.65rem 2rem;
+      padding: 0.85rem 2rem;
+
+      color: $light;
+      background: $primary;
+
+      border: none;
+      border-radius: 10px;
+
     }
 
   }
