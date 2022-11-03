@@ -12,6 +12,7 @@
       </div>
       <div class="submit-line">
         <button type="submit">Login</button>
+        <p> Don't have an account? <NutLink to="/register">Register</NutLink></p>
       </div>
     </form>
   </div>
@@ -86,8 +87,8 @@ export default {
         border-radius: 10px;
 
         outline: none;
-        border: 1.8px solid $dark;
-        border-radius: 4px;
+        border: 1.4px solid $dark;
+        border-radius: 10px;
         padding: 0 0 0 0.4rem;
         transition: background .2s linear, outline .1s ease-in-out;
 
@@ -103,8 +104,9 @@ export default {
   }
 
   .submit-line {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 2rem;
 
     button {
@@ -114,9 +116,16 @@ export default {
       background: $primary;
 
       border: none;
+      cursor: pointer;
       border-radius: 10px;
 
     }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
 
   }
 }
