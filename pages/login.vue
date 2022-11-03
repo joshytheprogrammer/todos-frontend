@@ -42,7 +42,9 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   width: 400px;
   max-width: 90%;
@@ -63,12 +65,19 @@ export default {
 
   form {
     display: block;
+    padding: 2rem 0;
 
     .form-group {
       display: block;
+      padding: 1rem 0;
 
       label {
         display: inline-block;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
       }
     }
 
