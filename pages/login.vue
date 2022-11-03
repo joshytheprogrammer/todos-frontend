@@ -125,7 +125,7 @@ export default {
     }
 
     .submit-line {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: flex-start;
       align-items: flex-start;
 
