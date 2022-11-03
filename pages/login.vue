@@ -10,7 +10,7 @@
         <label>Password</label>
         <input type="password" v-model="login.password" />
       </div>
-      <div>
+      <div class="btn">
         <button type="submit">Submit</button>
       </div>
     </form>
@@ -57,12 +57,13 @@ export default {
   border-radius: 10px;
 
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
   }
 
   form {
     display: block;
+
   }
 }
 </style>
