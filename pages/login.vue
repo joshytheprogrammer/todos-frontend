@@ -79,7 +79,7 @@ export default {
       }
 
       input {
-        @include input;
+        @include form-control;
         font-size: 14px;
 
         &::placeholder {
@@ -109,12 +109,7 @@ export default {
       font-weight: 500;
 
       a {
-        color: $primary;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
+        @include link;
       }
     }
   }
