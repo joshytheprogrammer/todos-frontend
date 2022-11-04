@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Signup for JTP todos</h1>
-    <form @submit.prevent="register">
+    <form @submit.prevent="userReg">
       <div class="form-group">
         <label>Username</label>
         <input type="text" v-model="register.username" placeholder="Enter your username" />
@@ -16,7 +16,7 @@
       </div>
       <div class="submit-line">
         <button type="submit">Register</button>
-        <p> Already have an account? <NuxtLink to="/register">Login</NuxtLink></p>
+        <p> Already have an account? <NuxtLink to="/login">Login</NuxtLink></p>
       </div>
     </form>
   </div>
@@ -35,8 +35,8 @@ export default {
     }
   },
   methods: {
-    register() {
-
+    userReg() {
+      console.log(this.register)
     }
   }
 }
