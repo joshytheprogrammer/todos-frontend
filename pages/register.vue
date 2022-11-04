@@ -16,7 +16,7 @@
       </div>
       <div class="submit-line">
         <button type="submit">Register</button>
-        <p> Already have an account <NuxtLink to="/register">Login</NuxtLink></p>
+        <p> Already have an account? <NuxtLink to="/register">Login</NuxtLink></p>
       </div>
     </form>
   </div>
@@ -62,6 +62,74 @@ export default {
 
   h1 {
     @include display-1;
+  }
+
+  form {
+    display: block;
+    padding: 1rem 0;
+
+    .form-group {
+      display: block;
+      padding-top: 1rem;
+
+      label {
+        display: inline-block;
+
+        @include label;
+      }
+
+      input {
+        @include form-control;
+        font-size: 14px;
+
+        &::placeholder {
+          color: $dark;
+        }
+
+        &:focus {
+          border-color: $primary;
+        }
+      }
+    }
+
+  }
+
+  .submit-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+
+    button {
+      @include btn;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+
+      a {
+        @include link;
+      }
+    }
+  }
+
+  @media screen and (max-width: $small) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .submit-line {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 1rem;
+
+      p {
+        display: block;
+        padding: 0.6rem 0;
+      }
+    }
   }
 }
 </style>
