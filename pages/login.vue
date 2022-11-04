@@ -60,8 +60,7 @@ export default {
   border-radius: 10px;
 
   h1 {
-    font-size: 30px;
-    font-weight: 500;
+    @include display-1;
   }
 
   form {
@@ -120,7 +119,7 @@ export default {
     }
 
     .submit-line {
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       padding-top: 1rem;
