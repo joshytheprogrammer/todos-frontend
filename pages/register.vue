@@ -4,15 +4,15 @@
     <form @submit.prevent="userReg">
       <div class="form-group">
         <label>Username</label>
-        <input type="text" v-model="register.username" placeholder="Enter your username" />
+        <input type="text" v-model="register.username" placeholder="Enter your username" required />
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="text" v-model="register.email" placeholder="Enter your email" />
+        <input type="text" v-model="register.email" placeholder="Enter your email" required />
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" v-model="register.password" placeholder="Enter your password" />
+        <input type="password" v-model="register.password" placeholder="Enter your password" required />
       </div>
       <div class="submit-line">
         <button type="submit">Register</button>

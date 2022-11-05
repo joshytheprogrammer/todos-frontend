@@ -4,11 +4,11 @@
     <form @submit.prevent="userLogin">
       <div class="form-group">
         <label>Username</label>
-        <input type="text" v-model="login.username" placeholder="Enter your username" />
+        <input type="text" v-model="login.username" placeholder="Enter your username" required />
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" v-model="login.password" placeholder="Enter your password" />
+        <input type="password" v-model="login.password" placeholder="Enter your password" required />
       </div>
       <div class="submit-line">
         <button type="submit">Login</button>
