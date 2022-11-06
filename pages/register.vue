@@ -42,7 +42,9 @@ export default {
         email: this.register.email,
         password: this.register.password
       }).then((response) => {
-        console.log(response)
+        if(response.status = 200) {
+          this.$router.push('/login')
+        }
       })
     }
   }
