@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
   auth: 'guest',
   data() {
@@ -35,8 +36,14 @@ export default {
     }
   },
   methods: {
-    userReg() {
-      console.log(this.register)
+    async userReg() {
+      await axios.post('http://localhost:5000/api/auth/register', {
+        username: this.register.username,
+        email: this.register.email,
+        password: this.register.password
+      }).then((response) => {
+        console.log(response)
+      })
     }
   }
 }
