@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Welcome back 👋</h1>
+    <h1>Welcome back 👋 {{$auth.loggedIn}}</h1>
     <form @submit.prevent="userLogin">
       <div class="form-group">
         <label>Username</label>
@@ -32,7 +32,8 @@ export default {
     async userLogin() {
       try {
         let response = await this.$auth.loginWith('local', { data: this.login })
-        console.log(response)
+        this.$router.push('/')
+        console.log(response.data.token)
       } catch (err) {
         console.log(err)
       }
