@@ -1,6 +1,8 @@
 <template>
   <div class="bar">
+    <form >
 
+    </form>
   </div>
 </template>
 
