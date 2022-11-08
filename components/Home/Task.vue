@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard">
+  <div class="task">
 
   </div>
 </template>
@@ -9,3 +9,7 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

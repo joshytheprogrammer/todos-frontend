@@ -49,7 +49,7 @@ export default {
       local: {
         scheme: 'refresh',
         token: {
-          property: 'token',
+          property: 'response.data.token',
           maxAge: 1800,
           global: true,
           // type: 'Bearer'

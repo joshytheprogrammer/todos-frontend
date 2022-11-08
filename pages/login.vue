@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Welcome back 👋 {{$auth.loggedIn}}</h1>
+    <h1>Welcome back 👋 </h1>
     <form @submit.prevent="userLogin">
       <div class="form-group">
         <label>Username</label>
