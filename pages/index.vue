@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <SearchBar />
+    <!-- <SearchBar /> -->
     <PageTitle :numOftasks="'4'" />
   </div>
 </template>
