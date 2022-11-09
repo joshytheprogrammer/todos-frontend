@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <h2>JTP todos</h2>
-    <button><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+    <button type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
   </div>
 </template>
 
@@ -28,7 +28,14 @@ export default {
 
   button {
     @include btn;
+    width: 48px;
+    height: 48px;
     box-shadow: 0px 1px 1px $dark;
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(1px);
+    }
   }
 }
 </style>
