@@ -2,13 +2,17 @@
   <div class="bar">
     <form @submit.prevent="search">
       <input type="text" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
-      <button type="submit">Search</button>
+      <button type="submit"><Icon icon="akar-icons:search" width="24" height="24" /></button>
     </form>
   </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue2';
 export default {
+  components: {
+    Icon,
+  },
   data() {
     return {
       search_term: ''
@@ -34,6 +38,7 @@ export default {
 
     .form-control {
       @include form-control;
+      border-right: 0px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -41,7 +46,8 @@ export default {
     button {
       border: none;
       background: $primary;
-      padding: 1rem;
+      width: 48px;
+      height: 48px;
       color: $light;
       cursor: pointer;
       border-top-right-radius: 10px;
