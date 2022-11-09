@@ -43,6 +43,7 @@ export default {
       background: $primary;
       padding: 1rem;
       color: $light;
+      cursor: pointer;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
 
