@@ -48,5 +48,9 @@ export default {
 
     }
   }
+
+  @media screen and (max-width: $medium) {
+    width: 90%;
+  }
 }
 </style>
