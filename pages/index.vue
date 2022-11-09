@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard">
     <SearchBar />
-    <!-- <PageTitle :numOftasks="'4'" /> -->
+    <PageTitle :numOftasks="'4'" />
   </div>
 </template>
 

@@ -37,10 +37,18 @@
 
   font-size: 16px;
   font-weight: 400;
+
+  &::placeholder {
+    color: $dark;
+  }
+
+  &:focus {
+    border-color: $primary;
+  }
 }
 
 @mixin page-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
 
   span {

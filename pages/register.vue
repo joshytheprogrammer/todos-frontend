@@ -90,14 +90,6 @@ export default {
       input {
         @include form-control;
         font-size: 14px;
-
-        &::placeholder {
-          color: $dark;
-        }
-
-        &:focus {
-          border-color: $primary;
-        }
       }
     }
 

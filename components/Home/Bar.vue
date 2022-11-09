@@ -36,14 +36,6 @@ export default {
       @include form-control;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-
-      &::placeholder {
-        color: $dark;
-      }
-
-      &:focus {
-        border-color: $primary;
-      }
     }
 
     button {
