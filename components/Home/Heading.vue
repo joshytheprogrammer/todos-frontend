@@ -13,9 +13,9 @@ export default {
 <style lang="scss" scoped>
 .heading {
   text-align: center;
-  padding: 2rem 0;
+
   h2 {
-    @include page-title;
+    @include display-1;
   }
 }
 </style>
