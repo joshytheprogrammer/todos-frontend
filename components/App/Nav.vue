@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <h2>JTP todos</h2>
-    <button type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+    <button @click="$router.push('/new')" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 14px;
 
   box-shadow: 0px 2px 2px $dark;
