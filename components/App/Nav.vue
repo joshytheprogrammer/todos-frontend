@@ -1,13 +1,16 @@
 <template>
   <div class="nav">
     <h2>JTP todos</h2>
-    <button>New</button>
+    <button><Icon icon="carbon:new-tab" width="24" height="24" /></button>
   </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue2';
 export default {
-
+  components: {
+    Icon
+  }
 }
 </script>
 

@@ -94,6 +94,7 @@ export default {
 
     button {
       @include btn;
+      padding: 0.85rem 2rem;
     }
 
     p {
