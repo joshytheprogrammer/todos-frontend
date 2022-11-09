@@ -1,8 +1,8 @@
 <template>
   <div class="bar">
     <form @submit.prevent="search">
-      <input type="text" v-model="search_term" @keypress.enter="search" placeholder="Search title, description and tags" class="form-control">
-      <button @click="search">Search</button>
+      <input type="text" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
+      <button type="submit">Search</button>
     </form>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     search() {
-
+      console.log(this.search_term)
     }
   }
 }
@@ -48,6 +48,10 @@ export default {
       border-bottom-right-radius: 10px;
 
     }
+  }
+
+  @media screen and (max-width: $m-large) {
+    width: 75%;
   }
 
   @media screen and (max-width: $medium) {
