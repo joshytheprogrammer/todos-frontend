@@ -15,7 +15,9 @@ export default {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 14px;
+  padding: 2rem 14px;
+
+  box-shadow: 0px 2px 2px $dark;
 
   h2 {
     @include page-title;
@@ -23,6 +25,7 @@ export default {
 
   button {
     @include btn;
+    box-shadow: 0px 1px 1px $dark;
   }
 }
 </style>
