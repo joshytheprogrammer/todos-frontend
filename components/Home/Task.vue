@@ -1,7 +1,7 @@
 <template>
   <div class="task">
     <div class="title">
-      <span>Code extensively for 12 hours. Implement Authentication and things like that</span>
+      <a @click.prevent="">Code extensively for 12 hours. Implement Authentication and things like that</a>
     </div>
     <div class="_actions">
       <a @click.prevent="">View task</a>
@@ -20,7 +20,15 @@ export default {
 .task {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid $dark;
+  border: 1.4px solid $dark;
+  box-shadow: 0px 1px 1px $dark;
+  border-radius: 10px;
+
+  width: 380px;
+  height: 220px;
+
+  line-height: 1.5;
+
 
   display: flex;
   flex-direction: column;
@@ -28,8 +36,8 @@ export default {
 
   .title {
     span {
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 18px;
+      font-weight: 700;
     }
   }
 
@@ -39,7 +47,7 @@ export default {
 
     a {
       @include link;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
