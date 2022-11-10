@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .task {
-  margin: 2rem 0;
+  margin: 1rem;
   padding: 1rem;
   border: 1.4px solid $dark;
   box-shadow: 0px 1px 1px $dark;

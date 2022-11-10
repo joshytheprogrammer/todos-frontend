@@ -2,7 +2,7 @@
   <div class="dashboard">
     <Nav />
     <SearchBar />
-    <PageTitle :numOftasks="'4'" />
+    <PageTitle :numOftasks="this.tasks.length" />
     <div class="tasks">
       <Task v-for="task in tasks" :key="task.id" :task="task" />
     </div>
@@ -52,7 +52,7 @@ export default {
         },
       ]
     }
-  }
+  },
 }
 </script>
 
@@ -60,26 +60,12 @@ export default {
 .dashboard {
 
   .tasks {
-    display: grid;
-    // gap: 12px;
-    justify-items: center;
-    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    padding: 1rem;
 
-    @media screen and (max-width: $large) {
-      grid-template-columns: repeat(3,1fr);
-    }
-
-    @media screen and (max-width: $m-large) {
-      grid-template-columns: repeat(2,1fr);
-    }
-
-    @media screen and (max-width: $medium) {
-      grid-template-columns: repeat(1,1fr);
-    }
-
-    @media screen and (max-width: $s-medium) {
-      display: block;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 </style>
