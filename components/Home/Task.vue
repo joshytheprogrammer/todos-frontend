@@ -27,7 +27,7 @@ export default {
   width: 350px;
   height: 220px;
 
-  line-height: 1.5;
+  line-height: 1.675;
 
 
   display: flex;
@@ -35,6 +35,7 @@ export default {
   justify-content: space-between;
 
   .title {
+
     span {
       font-size: 18px;
       font-weight: 700;
