@@ -32,23 +32,23 @@ export default {
         },
         {
           id: 1,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
+          title: 'Call mum and tell her to get reference letter.'
         },
         {
           id: 2,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
+          title: 'Study WORK, ENERGY and POWER. (PHY111)'
         },
         {
           id: 3,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
+          title: 'Buy bread from caf.'
         },
         {
           id: 4,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
+          title: 'Attend debating meeting today!!!!'
         },
         {
           id: 5,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
+          title: 'Test the JTP todos website for bugs and things like that.'
         },
       ]
     }
