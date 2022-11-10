@@ -13,6 +13,7 @@ import Task from "../components/Home/Task.vue"
 
 export default {
   auth: 'guest',
+  layout: 'user',
   components: {
     PageTitle,
     Task
