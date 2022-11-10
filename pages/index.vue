@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import PageTitle from "../components/Home/Heading.vue"
-import Task from "../components/Home/Task.vue"
+import PageTitle from "../components/App/Heading.vue"
+import Task from "../components/App/Task.vue"
 
 export default {
   auth: 'guest',

@@ -8,7 +8,7 @@
 
 <script>
 import Nav from "../components/App/Nav.vue"
-import SearchBar from "../components/Home/Bar.vue"
+import SearchBar from "../components/App/Bar.vue"
 export default {
   components: {
     Nav,
