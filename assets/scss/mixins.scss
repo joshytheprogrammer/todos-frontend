@@ -47,6 +47,7 @@
 }
 
 @mixin page-title {
+  color: $dark;
   font-size: 36px;
   font-weight: 700;
 }

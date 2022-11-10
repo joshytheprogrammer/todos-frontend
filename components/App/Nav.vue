@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-    <h2>JTP todos</h2>
+    <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
     <button @click="$router.push('/new')" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
   </div>
 </template>
@@ -23,7 +23,8 @@ export default {
 
   box-shadow: 0px 2px 2px $dark;
 
-  h2 {
+  .logo {
+    text-decoration: none;
     @include page-title;
   }
 
