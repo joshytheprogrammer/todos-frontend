@@ -3,6 +3,7 @@
     <Nav />
     <SearchBar />
     <PageTitle :numOftasks="'4'" />
+    <Task />
   </div>
 </template>
 
@@ -10,12 +11,15 @@
 import Nav from "../components/App/Nav.vue"
 import SearchBar from "../components/Home/Bar.vue"
 import PageTitle from "../components/Home/Heading.vue"
+import Task from "../components/Home/Task.vue"
+
 export default {
   auth: 'guest',
   components: {
     Nav,
     SearchBar,
-    PageTitle
+    PageTitle,
+    Task
   }
 }
 </script>
