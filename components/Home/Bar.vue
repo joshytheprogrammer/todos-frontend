@@ -38,6 +38,7 @@ export default {
 
     .form-control {
       @include form-control;
+      border-width: 1.5px;
       border-right: 0px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
