@@ -1,7 +1,7 @@
 <template>
   <div class="task">
     <div class="title">
-      <a @click.prevent="">Code extensively for 12 hours. Implement Authentication and things like that</a>
+      <span>{{task.title}}...</span>
     </div>
     <div class="_actions">
       <a @click.prevent="">View task</a>
@@ -12,13 +12,13 @@
 
 <script>
 export default {
-
+  props: ["task"]
 }
 </script>
 
 <style lang="scss" scoped>
 .task {
-  margin: 1rem;
+  margin: 2rem 1rem;
   padding: 1rem;
   border: 1.4px solid $dark;
   box-shadow: 0px 1px 1px $dark;

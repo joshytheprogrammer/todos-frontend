@@ -3,7 +3,7 @@
     <Nav />
     <SearchBar />
     <PageTitle :numOftasks="'4'" />
-    <Task />
+    <Task :task="{title: 'Code extensively for 12 hours. Implement Authentication and things like that'}" />
   </div>
 </template>
 
