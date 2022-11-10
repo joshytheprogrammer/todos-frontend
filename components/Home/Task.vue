@@ -18,13 +18,13 @@ export default {
 
 <style lang="scss" scoped>
 .task {
-  margin: 2rem 1rem;
+  margin: 2rem 0;
   padding: 1rem;
   border: 1.4px solid $dark;
   box-shadow: 0px 1px 1px $dark;
   border-radius: 10px;
 
-  width: 380px;
+  width: 350px;
   height: 220px;
 
   line-height: 1.5;
