@@ -3,7 +3,7 @@
     <div class="modal">
       <div class="header">
         <slot name="title"></slot>
-        <span class="icon"><Icon icon="ci:close-big" width="24" height="24" /></span>
+        <span @click="close" class="icon"><Icon icon="ci:close-big" width="24" height="24" /></span>
       </div>
       <slot name="body">
 
@@ -17,6 +17,11 @@ import { Icon } from '@iconify/vue2';
 export default {
   components: {
     Icon
+  },
+  methods: {
+    close() {
+
+    }
   }
 }
 </script>
