@@ -5,9 +5,7 @@
         <slot name="title"></slot>
         <span @click="close" class="icon"><Icon icon="ci:close-big" width="24" height="24" /></span>
       </div>
-      <slot name="body">
-
-      </slot>
+      <slot name="body"></slot>
     </div>
   </div>
 </template>
@@ -15,6 +13,7 @@
 <script>
 import { Icon } from '@iconify/vue2'
 import {mapActions} from "vuex"
+
 export default {
   components: {
     Icon
