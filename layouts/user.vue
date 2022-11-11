@@ -2,7 +2,7 @@
   <div class="app">
     <Nav />
     <SearchBar />
-    <Transition>
+    <Transition name="fade">
       <Create v-show="showingCreate" />
     </Transition>
     <Nuxt />
@@ -30,13 +30,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.2s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.v-enter-from,
-.v-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 </style>

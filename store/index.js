@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  TOGGLE_CREATE_MODAL(state, payload) {
+  TOGGLE_CREATE_MODAL(state) {
     state.showingCreateModal = !state.showingCreateModal
   }
 }
