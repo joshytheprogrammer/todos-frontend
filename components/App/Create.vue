@@ -5,7 +5,9 @@
         <h1>Create new task</h1>
       </template>
       <template #body>
-
+        <form>
+          
+        </form>
       </template>
     </Modal>
   </div>
