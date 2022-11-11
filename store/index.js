@@ -1,21 +1,22 @@
 export const state = () => ({
-    showingCreateModal: false,
+    showingCreateModal: true,
 })
 
 export const mutations = {
-  UPDATE_CREATE_MODAL() {
-    state.showingCreateModal = !showingCreateModal
+  TOGGLE_CREATE_MODAL() {
+    state.showingCreateModal = !state.showingCreateModal
   }
 }
 
 export const actions = {
-  updateCreateModal({commit}) {
-    commit("showingCreateModal")
+  toggleCreateModal({commit}) {
+    commit("TOGGLE_CREATE_MODAL")
   }
 }
 
 export const getters = {
   isShowingCreateModal(state) {
+    console.log(state.showingCreateModal)
     return state.showingCreateModal
   }
 }

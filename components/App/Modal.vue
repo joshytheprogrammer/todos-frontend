@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     ...mapActions({
-      close: 'updateCreateModal'
+      close: 'toggleCreateModal'
     }),
   }
 }

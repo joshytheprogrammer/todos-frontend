@@ -1,15 +1,21 @@
 <template>
   <div class="nav">
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
-    <button @click="$router.push('/new')" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+    <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
   </div>
 </template>
 
 <script>
 import { Icon } from '@iconify/vue2';
+import { mapActions } from "vuex"
 export default {
   components: {
     Icon
+  },
+  methods: {
+    ...mapActions({
+      'open': 'toggleCreateModal'
+    })
   }
 }
 </script>
