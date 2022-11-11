@@ -4,10 +4,12 @@
     <div class="tasks">
       <Task v-for="task in tasks" :key="task.id" :task="task" />
     </div>
+    <Modal />
   </div>
 </template>
 
 <script>
+import Modal from "../components/App/Modal.vue"
 import PageTitle from "../components/App/Heading.vue"
 import Task from "../components/App/Task.vue"
 
@@ -16,7 +18,8 @@ export default {
   layout: 'user',
   components: {
     PageTitle,
-    Task
+    Task,
+    Modal
   },
   data() {
     return {
