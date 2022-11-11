@@ -13,15 +13,16 @@
 </template>
 
 <script>
-import { Icon } from '@iconify/vue2';
+import { Icon } from '@iconify/vue2'
+import {mapActions} from "vuex"
 export default {
   components: {
     Icon
   },
   methods: {
-    close() {
-
-    }
+    ...mapActions({
+      close: 'updateCreateModal'
+    }),
   }
 }
 </script>
