@@ -72,10 +72,6 @@ export default {
     .modal {
       width: 95%;
       padding: 1rem;
-
-      .header {
-
-      }
     }
   }
 }
