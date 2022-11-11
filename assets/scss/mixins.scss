@@ -40,7 +40,7 @@
 
   &::placeholder {
     color: $dark;
-    
+
   }
 
   &:focus {
@@ -52,6 +52,11 @@
   color: $dark;
   font-size: 36px;
   font-weight: 700;
+
+  @media screen and (max-width: $small) {
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 
 @mixin display-1 {

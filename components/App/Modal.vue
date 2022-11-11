@@ -31,6 +31,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -63,6 +64,17 @@ export default {
         &:hover {
           color: $danger;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: $medium){
+    .modal {
+      width: 95%;
+      padding: 1rem;
+
+      .header {
+
       }
     }
   }
