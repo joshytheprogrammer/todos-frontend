@@ -51,7 +51,7 @@ export default {
     box-shadow: 0 12px 12px $dark;
     z-index: 10;
 
-    padding: 1rem;
+    padding: 2rem;
 
     .header {
       display: flex;
