@@ -5,14 +5,21 @@
         <h1>Create new task</h1>
       </template>
       <template #body>
-        <form>
+        <form @submit.prevent="">
           <div class="form-group">
             <label>Title</label>
             <input type="text" placeholder="What would you call this task?" required>
           </div>
           <div class="form-group">
             <label>Description</label>
-            <textarea type="text" placeholder="What would you call this task?" required></textarea>
+            <textarea type="text" placeholder="How would you describe it?" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Deadline</label>
+            <input type="date" placeholder="When does the task end?" required>
+          </div>
+          <div class="submit">
+            <button type="submit">Create task</button>
           </div>
         </form>
       </template>
@@ -52,11 +59,13 @@ export default {
 
       input {
         @include form-control;
+        font-size: 14px;
       }
 
       textarea {
         @include form-control;
-        height: 220px;
+        font-size: 14px;
+        height: 180px;
         padding: 0.8rem 0.4rem;
 
         &::-webkit-resizer {
@@ -79,6 +88,15 @@ export default {
         &::-webkit-scrollbar-thumb:hover {
           background: $dark;
         }
+      }
+    }
+
+    .submit {
+      padding-top: 2rem;
+
+      button {
+        @include btn;
+        padding: 1rem 2rem;
       }
     }
   }
