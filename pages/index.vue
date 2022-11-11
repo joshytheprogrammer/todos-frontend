@@ -4,7 +4,15 @@
     <div class="tasks">
       <Task v-for="task in tasks" :key="task.id" :task="task" />
     </div>
-    <Modal />
+    <Modal>
+      <template #title>
+        <h1>Create new task</h1>
+      </template>
+      <template #body>
+
+      </template>
+
+    </Modal>
   </div>
 </template>
 
