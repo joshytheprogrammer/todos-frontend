@@ -8,13 +8,14 @@
 <script>
 import { Icon } from '@iconify/vue2';
 import { mapActions } from "vuex"
+
 export default {
   components: {
     Icon
   },
   methods: {
     ...mapActions({
-      'open': 'toggleCreateModal'
+      open: 'toggleCreateModal'
     })
   }
 }

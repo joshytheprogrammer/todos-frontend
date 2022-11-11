@@ -1,9 +1,9 @@
 export const state = () => ({
-    showingCreateModal: true,
+    showingCreateModal: false,
 })
 
 export const mutations = {
-  TOGGLE_CREATE_MODAL() {
+  TOGGLE_CREATE_MODAL(state, payload) {
     state.showingCreateModal = !state.showingCreateModal
   }
 }

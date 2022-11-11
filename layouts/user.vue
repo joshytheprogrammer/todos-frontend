@@ -2,7 +2,7 @@
   <div class="app">
     <Nav />
     <SearchBar />
-    <Create v-if="showingCreate" />
+    <Create v-show="showingCreate" />
     <Nuxt />
   </div>
 </template>

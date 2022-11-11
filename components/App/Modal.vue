@@ -68,5 +68,15 @@ export default {
       }
     }
   }
+
+  // @keyframes popup {
+  //   0%{
+  //     opacity: 0;
+  //   }
+
+  //   100%{
+  //     opacity: 1;
+  //   }
+  // }
 }
 </style>
