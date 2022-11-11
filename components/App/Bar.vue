@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
     <form @submit.prevent="search">
-      <input type="text" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
+      <input type="search" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
       <button type="submit" title="Search"><Icon icon="akar-icons:search" width="24" height="24" /></button>
     </form>
   </div>
@@ -15,6 +15,7 @@ export default {
   },
   data() {
     return {
+      // search_term: this.$route.query.k
       search_term: ''
     }
   },
