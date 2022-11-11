@@ -7,19 +7,13 @@
       <a @click.prevent="view(task.id)">View task</a>
       <a @click.prevent="complete(task)">Mark as completed</a>
     </div>
-    <Modal v-show="task.id == showingID">
-      <template #title>
-        <h1>View Task</h1>
-      </template>
-    </Modal>
   </div>
 </template>
 
 <script>
-import Modal from "./Modal.vue"
 export default {
-  components: {
-    Modal,
+  computed: {
+
   },
   props: ["task"],
   data() {
