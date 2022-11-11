@@ -3,12 +3,12 @@
     <h1>Welcome back 👋 </h1>
     <form @submit.prevent="userLogin">
       <div class="form-group">
-        <label>Username</label>
-        <input type="text" v-model="login.username" placeholder="Enter your username" required />
+        <label for="username">Username</label>
+        <input type="text" name="username" v-model="login.username" placeholder="Enter your username" required />
       </div>
       <div class="form-group">
-        <label>Password</label>
-        <input type="password" v-model="login.password" placeholder="Enter your password" required />
+        <label for="password">Password</label>
+        <input type="password" name="username" v-model="login.password" placeholder="Enter your password" required />
       </div>
       <div class="submit-line">
         <button type="submit">Login</button>

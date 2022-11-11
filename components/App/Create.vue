@@ -7,16 +7,16 @@
       <template #body>
         <form @submit.prevent="submitTask">
           <div class="form-group">
-            <label>Title</label>
-            <input type="text" v-model="task.title" placeholder="What would you call this task?" required>
+            <label for="title">Title</label>
+            <input type="text" name="title" v-model="task.title" placeholder="What would you call this task?" required>
           </div>
           <div class="form-group">
-            <label>Description</label>
-            <textarea type="text" v-model="task.desc" placeholder="How would you describe it?" required></textarea>
+            <label for="desc">Description</label>
+            <textarea type="text" name="desc" v-model="task.desc" placeholder="How would you describe it?" required></textarea>
           </div>
           <div class="form-group">
-            <label>Deadline</label>
-            <input type="datetime-local" v-model="task.date" placeholder="When does the task end?" required>
+            <label for="deadline">Deadline</label>
+            <input type="datetime-local" name="deadline" v-model="task.date" placeholder="When does the task end?" required>
           </div>
           <div class="submit">
             <button type="submit">Create task</button>
