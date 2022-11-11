@@ -8,9 +8,6 @@
       <slot name="body">
 
       </slot>
-      <slot name="footer">
-
-      </slot>
     </div>
   </div>
 </template>
