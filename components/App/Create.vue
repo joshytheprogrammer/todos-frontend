@@ -6,7 +6,10 @@
       </template>
       <template #body>
         <form>
-          
+          <div class="form-group">
+            <label>Title</label>
+            <input type="text" placeholder="What would you call this task?" required>
+          </div>
         </form>
       </template>
     </Modal>
@@ -23,5 +26,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.create {
+  h1 {
 
+  }
+
+  form {
+    .form-group {
+
+      input {
+        @include form-control;
+      }
+    }
+  }
+}
 </style>

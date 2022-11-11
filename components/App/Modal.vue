@@ -50,7 +50,6 @@ export default {
     border-radius: 10px;
     box-shadow: 0 12px 12px $dark;
     z-index: 10;
-    text-align: center;
 
     padding: 1rem;
 
@@ -68,15 +67,5 @@ export default {
       }
     }
   }
-
-  // @keyframes popup {
-  //   0%{
-  //     opacity: 0;
-  //   }
-
-  //   100%{
-  //     opacity: 1;
-  //   }
-  // }
 }
 </style>
