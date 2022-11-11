@@ -57,6 +57,11 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
 
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 400px;
   max-width: 90%;
 
