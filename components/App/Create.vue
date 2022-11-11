@@ -5,7 +5,7 @@
         <h1>Create new task</h1>
       </template>
       <template #body>
-        <form @submit.prevent="">
+        <form @submit.prevent="submitTask">
           <div class="form-group">
             <label>Title</label>
             <input type="text" v-model="task.title" placeholder="What would you call this task?" required>
@@ -45,6 +45,8 @@ export default {
   },
   methods: {
     submitTask() {
+      // let d = new Date(this.task.date).valueOf()
+
       console.log(this.task)
     }
   }
