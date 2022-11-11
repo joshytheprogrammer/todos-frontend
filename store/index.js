@@ -16,7 +16,6 @@ export const actions = {
 
 export const getters = {
   isShowingCreateModal(state) {
-    console.log(state.showingCreateModal)
     return state.showingCreateModal
   }
 }

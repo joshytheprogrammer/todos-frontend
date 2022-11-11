@@ -8,15 +8,15 @@
         <form @submit.prevent="">
           <div class="form-group">
             <label>Title</label>
-            <input type="text" placeholder="What would you call this task?" required>
+            <input type="text" v-model="task.title" placeholder="What would you call this task?" required>
           </div>
           <div class="form-group">
             <label>Description</label>
-            <textarea type="text" placeholder="How would you describe it?" required></textarea>
+            <textarea type="text" v-model="task.desc" placeholder="How would you describe it?" required></textarea>
           </div>
           <div class="form-group">
             <label>Deadline</label>
-            <input type="date" placeholder="When does the task end?" required>
+            <input type="datetime-local" v-model="task.date" placeholder="When does the task end?" required>
           </div>
           <div class="submit">
             <button type="submit">Create task</button>
@@ -32,6 +32,20 @@ import Modal from "./Modal.vue"
 export default {
   components: {
     Modal
+  },
+  data() {
+    return {
+      task : {
+        title: '',
+        desc: '',
+        date: ''
+      }
+    }
+  },
+  methods: {
+    submitTask() {
+      console.log(this.task)
+    }
   }
 }
 </script>
