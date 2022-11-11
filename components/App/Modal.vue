@@ -29,6 +29,7 @@ export default {
 <style lang="scss" scoped>
 .overlay {
   position: absolute;
+  overflow-y: hidden;
   top: 0;
   left: 0;
   bottom: 0;
@@ -38,11 +39,12 @@ export default {
   backdrop-filter: blur(3px);
   z-index: 5;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 80%;
     max-width: 720px;
     background-color: $light;
