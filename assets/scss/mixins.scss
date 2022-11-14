@@ -29,6 +29,8 @@
   height: 48px;
 
   border-radius: 10px;
+  background-color: $light;
+  color: $dark;
 
   outline: none;
   border: 1.4px solid $dark;
@@ -40,7 +42,6 @@
 
   &::placeholder {
     color: $dark;
-
   }
 
   &:focus {
