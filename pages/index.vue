@@ -12,7 +12,7 @@ import PageTitle from "../components/App/Heading.vue"
 import Task from "../components/App/Task.vue"
 
 export default {
-  auth: 'guest',
+  // auth: 'guest',
   layout: 'user',
   components: {
     PageTitle,
