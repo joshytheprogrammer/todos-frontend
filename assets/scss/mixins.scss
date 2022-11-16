@@ -21,6 +21,10 @@
   border-radius: 10px;
 }
 
+@mixin container-reset {
+
+}
+
 @mixin btn {
   text-decoration: none;
   color: $light;

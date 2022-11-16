@@ -50,6 +50,11 @@ export default {
   @include container;
   width: 720px;
 
+  transform: none;
+  top: auto;
+  left: auto;
+  position: relative;
+
   .create {
 
     h1 {
