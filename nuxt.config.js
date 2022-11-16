@@ -47,29 +47,21 @@ export default {
   auth: {
     strategies: {
       local: {
-        scheme: 'refresh',
         token: {
           property: 'token',
-          maxAge: 1800,
           global: true,
-          // type: 'Bearer'
-        },
-        refreshToken: {
-          property: 'refresh_token',
-          data: 'refresh_token',
-          maxAge: 60 * 60 * 24 * 30
+          required: true,
+          type: ''
         },
         user: {
           property: 'user',
-         // autoFetch: true
+          autoFetch: true
         },
         endpoints: {
           login: { url: 'http://localhost:5000/api/auth/login', method: 'post' },
-          refresh: { url: 'http://localhost:5000/api/auth/refresh', method: 'post' },
-          user: { url: 'http://localhost:5000/api/auth/user', method: 'get' },
-          logout: { url: 'http://localhost:5000/api/auth/logout', method: 'post' }
-        },
-        autoLogout: false
+          logout: { url: 'http://localhost:5000/api/auth/logout', method: 'post' },
+          user: { url: 'http://localhost:5000/api/auth/user', method: 'get' }
+        }
       }
     }
   },
