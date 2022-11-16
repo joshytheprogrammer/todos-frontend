@@ -3,8 +3,9 @@
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
 
     <div class="actions">
-      <button @click="logout">Logout</button>
-      <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+      <NuxtLink to="/create">Create</NuxtLink>
+      <!-- <button @click="logout">Logout</button>
+      <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button> -->
     </div>
   </div>
 </template>
