@@ -50,10 +50,7 @@ export default {
   @include container;
   width: 720px;
 
-  transform: none;
-  top: auto;
-  left: auto;
-  position: relative;
+  @include container-reset;
 
   .create {
 
@@ -77,12 +74,10 @@ export default {
 
         input {
           @include form-control;
-          font-size: 14px;
         }
 
         textarea {
           @include form-control;
-          font-size: 14px;
           height: 180px;
           padding: 0.8rem 0.4rem;
 
@@ -106,6 +101,11 @@ export default {
           &::-webkit-scrollbar-thumb:hover {
             background: $dark;
           }
+        }
+
+        input, textarea {
+          font-size: 16px;
+          font-weight: 500;
         }
       }
 

@@ -22,7 +22,10 @@
 }
 
 @mixin container-reset {
-
+  transform: none;
+  top: auto;
+  left: auto;
+  position: relative;
 }
 
 @mixin btn {
