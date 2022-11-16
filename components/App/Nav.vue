@@ -3,7 +3,7 @@
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
 
     <div class="actions">
-      <a @click="logout">Logout</a>
+      <button @click="logout">Logout</button>
       <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
   methods: {
     async logout() {
       await this.$auth.logout()
-      this.$router.push('/login')
+      await this.$router.push('/login')
     }
   }
 }
@@ -46,6 +46,9 @@ export default {
   }
 
  .actions {
+  display: flex;
+  align-items: center;
+
    button {
       @include btn;
       width: 48px;
