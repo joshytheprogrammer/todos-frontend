@@ -37,15 +37,24 @@ export default {
   },
   methods: {
     async userReg() {
-      await axios.post('http://localhost:5000/api/auth/register', {
-        username: this.register.username,
-        email: this.register.email,
-        password: this.register.password
-      }).then((response) => {
-        if(response.status = 200) {
-          this.$router.push('/login')
-        }
-      })
+      try {
+        await axios.post('http://localhost:5000/api/auth/register', {
+          username: this.register.username,
+          email: this.register.email,
+          password: this.register.password
+        }).then((response) => {
+          if(response.status = 200) {
+            this.$router.push('/login')
+          }
+        })
+
+        // await this.$auth.loginWith('local', {
+        //   email: this.register.email,
+        //   password: this.register.password
+        // })
+      }catch(e) {
+        console.log(e)
+      }
     }
   }
 }
