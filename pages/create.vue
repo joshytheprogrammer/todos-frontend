@@ -25,6 +25,7 @@
 
 <script>
 export default {
+  layout: 'user',
   data() {
     return {
       task : {
@@ -46,6 +47,9 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+  @include container;
+  width: 720px;
+
   .create {
 
     h1 {
