@@ -62,26 +62,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  @include container;
   width: 400px;
-  max-width: 90%;
-
-  height: fit-content;
-
-  margin: 2rem auto;
-  padding: 2rem 1rem;
-
-  border: 1px solid $dark;
-  box-shadow: 0px 4px 4px $dark;
-  border-radius: 10px;
 
   h1 {
     @include display-1;

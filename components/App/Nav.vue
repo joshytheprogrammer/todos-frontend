@@ -4,8 +4,8 @@
 
     <div class="actions">
       <NuxtLink to="/create">Create</NuxtLink>
-      <!-- <button @click="logout">Logout</button>
-      <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button> -->
+      <a href="/logout" @click.prevent="logout">Logout</a>
+      <!-- <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button> -->
     </div>
   </div>
 </template>
