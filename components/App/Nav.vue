@@ -1,7 +1,11 @@
 <template>
   <div class="nav">
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
-    <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+
+    <div class="actions">
+      <a @click.prevent="logout">Logout</a>
+      <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button>
+    </div>
   </div>
 </template>
 
@@ -17,6 +21,11 @@ export default {
     ...mapActions({
       open: 'toggleCreateModal'
     })
+  },
+  methods: {
+    async logout() {
+      await this.$auth.logout()
+    }
   }
 }
 </script>
@@ -35,16 +44,18 @@ export default {
     @include page-title;
   }
 
-  button {
-    @include btn;
-    width: 48px;
-    height: 48px;
-    box-shadow: 0px 1px 1px $dark;
+ .actions {
+   button {
+      @include btn;
+      width: 48px;
+      height: 48px;
+      box-shadow: 0px 1px 1px $dark;
 
-    &:active {
-      box-shadow: none;
-      transform: translateY(1px);
+      &:active {
+        box-shadow: none;
+        transform: translateY(1px);
+      }
     }
-  }
+ }
 }
 </style>

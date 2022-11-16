@@ -59,7 +59,7 @@ export default {
         },
         endpoints: {
           login: { url: 'http://localhost:5000/api/auth/login', method: 'post' },
-          logout: { url: 'http://localhost:5000/api/auth/logout', method: 'post' },
+          logout: false,
           user: { url: 'http://localhost:5000/api/auth/user', method: 'get' }
         }
       }
