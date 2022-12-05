@@ -2,16 +2,18 @@
   <div class="bar">
     <form @submit.prevent="search">
       <input type="search" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
-      <button type="submit" title="Search"><Icon icon="akar-icons:search" width="24" height="24" /></button>
+      <button type="submit" title="Search">
+        <SearchCircleIcon size="2.2x" />
+      </button>
     </form>
   </div>
 </template>
 
 <script>
-import { Icon } from '@iconify/vue2';
+import { SearchCircleIcon } from "@vue-hero-icons/outline"
 export default {
   components: {
-    Icon,
+    SearchCircleIcon,
   },
   data() {
     return {

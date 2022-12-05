@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import { SearchCircleIcon } from "@vue-hero-icons/outline"
 import { mapActions } from "vuex"
 
 export default {
