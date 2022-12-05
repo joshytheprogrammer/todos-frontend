@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="create">
-      <h1>Create new task</h1>
+      <!-- <h1>Create new task</h1> -->
       <form @submit.prevent="submitTask">
         <div class="form-group">
           <label for="title">Title</label>
@@ -49,22 +49,22 @@ export default {
 .container {
   @include container;
   width: 720px;
+  padding: 1rem;
 
   @include container-reset;
+  border: none;
 
   .create {
 
     h1 {
-      @include page-title;
+      @include display-1;
     }
 
     form {
       display: block;
-      padding: 1rem 0;
 
       .form-group {
         display: block;
-        padding-top: 1rem;
 
         label {
           display: inline-block;
@@ -78,7 +78,7 @@ export default {
 
         textarea {
           @include form-control;
-          height: 180px;
+          height: 160px;
           padding: 0.8rem 0.4rem;
 
           &::-webkit-resizer {
