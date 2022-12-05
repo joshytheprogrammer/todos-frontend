@@ -1,5 +1,5 @@
 export const state = () => ({
-  mobile: true,
+  isMobile: true,
 })
 
 export const mutations = {
@@ -20,8 +20,8 @@ export const actions = {
 }
 
 export const getters = {
-  isMobile(state) {
-    return state.mobile
+  getDevice(state) {
+    return state.isMobile
   },
 }
 

@@ -15,7 +15,7 @@ import { mapActions } from "vuex"
 
 export default {
   components: {
-    SearchCircleIcon
+
   },
   methods: {
     ...mapActions({
@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem 14px;
 
