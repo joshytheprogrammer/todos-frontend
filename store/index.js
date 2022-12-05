@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  checkWidth(state) {
+  CHECK_WIDTH(state) {
     let w = window.innerWidth
 
     // If statement to check width
@@ -14,7 +14,9 @@ export const mutations = {
 }
 
 export const actions = {
-
+  checkWidth({commit}) {
+    commit("CHECK_WIDTH")
+  }
 }
 
 export const getters = {

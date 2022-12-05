@@ -1,8 +1,6 @@
 <template>
   <div class="app">
     <Nav />
-    <SearchBar />
-
     <Nuxt />
   </div>
 </template>
