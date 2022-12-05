@@ -59,5 +59,9 @@ export default {
 
     }
   }
+
+  @media screen and (max-width: $medium){
+    margin: 1rem auto;
+  }
 }
 </style>

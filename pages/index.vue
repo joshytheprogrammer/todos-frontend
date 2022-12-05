@@ -52,11 +52,9 @@ export default {
 
 <style lang="scss" scoped>
 .dashboard {
+  padding: 1rem;
 
   .tasks {
-    margin: auto;
-    padding: 1rem;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .heading {
-  padding: 1rem 12px;
+  
   text-align: center;
 
   h2 {
