@@ -1,40 +1,26 @@
 export const state = () => ({
-    showingCreateModal: false,
-    showingTaskModal: false,
+  mobile: true,
 })
 
 export const mutations = {
-  TOGGLE_CREATE_MODAL(state) {
-    state.showingCreateModal = !state.showingCreateModal
+  checkWidth(state) {
+    let w = window.innerWidth
+
+    // If statement to check width
+    w > 768 ? state.isMobile = false : state.isMobile = true
+
+    return
   },
-  TOGGLE_TASK_MODAL(state) {
-    state.showingTaskModal = !state.showingTaskModal
-  },
-  CLOSE_ALL_MODAL(state) {
-    state.showingCreateModal = false
-    state.showingTaskModal = false
-  }
 }
 
 export const actions = {
-  toggleCreateModal({commit}) {
-    commit("TOGGLE_CREATE_MODAL")
-  },
-  toggleTaskModal({commit}) {
-    commit("TOGGLE_TASK_MODAL")
-  },
-  closeModal({commit}) {
-    commit("CLOSE_ALL_MODAL")
-  }
+
 }
 
 export const getters = {
-  isShowingCreateModal(state) {
-    return state.showingCreateModal
+  isMobile(state) {
+    return state.mobile
   },
-  isShowingTaskModal(state) {
-    return state.showingTaskModal
-  }
 }
 
 export const modules = {
