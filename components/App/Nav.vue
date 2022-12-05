@@ -30,7 +30,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem 14px;
+  padding: 1rem 14px;
 
   box-shadow: 0px 2px 2px $dark;
 
