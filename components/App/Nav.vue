@@ -3,6 +3,7 @@
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
     <SearchBar />
     <div class= "actions">
+      <NuxtLink to="/#">Home</NuxtLink>
       <NuxtLink to="/create">Create</NuxtLink>
       <a href="/logout" @click.prevent="logout">Logout</a>
     </div>
@@ -39,20 +40,31 @@ export default {
   }
 
  .actions {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-   button {
-      @include btn;
-      width: 48px;
-      height: 48px;
-      box-shadow: 0px 1px 1px $dark;
+    a {
+      text-decoration: none;
+      padding: 0 4px;
+      color: $dark;
+      cursor: pointer;
 
-      &:active {
-        box-shadow: none;
-        transform: translateY(1px);
+      font-weight: 400;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $primary;
+        text-underline-offset: 9px;
+      }
+
+      &.nuxt-link-exact-active {
+        text-decoration: underline;
+        text-decoration-color: $primary;
+        text-underline-offset: 9px;
+        color: $dark;
       }
     }
- }
+  }
 }
 </style>
