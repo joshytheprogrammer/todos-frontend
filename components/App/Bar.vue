@@ -31,8 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 .bar {
-  margin: 2rem auto;
-  width: 50%;
+  width: 100%;
+  max-width: 498px;
 
   form {
     width: 100%;
@@ -58,14 +58,6 @@ export default {
       border-bottom-right-radius: 10px;
 
     }
-  }
-
-  @media screen and (max-width: $m-large) {
-    width: 75%;
-  }
-
-  @media screen and (max-width: $medium) {
-    width: 90%;
   }
 }
 </style>

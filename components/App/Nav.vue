@@ -1,26 +1,19 @@
 <template>
   <div class="nav">
     <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
-
-    <div class="actions">
+    <SearchBar />
+    <div class= "actions">
       <NuxtLink to="/create">Create</NuxtLink>
       <a href="/logout" @click.prevent="logout">Logout</a>
-      <!-- <button @click="open" type="button" title="Create new task"><Icon icon="carbon:new-tab" width="24" height="24" /></button> -->
     </div>
   </div>
 </template>
 
 <script>
-import { mapActions } from "vuex"
-
+import SearchBar from "../App/Bar.vue"
 export default {
   components: {
-
-  },
-  methods: {
-    ...mapActions({
-      open: 'toggleCreateModal'
-    })
+    SearchBar
   },
   methods: {
     async logout() {

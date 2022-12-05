@@ -8,6 +8,7 @@
         <a href="/logout" @click.prevent="logout">Logout</a>
       </div>
     </nav>
+    
     <SearchBar />
   </div>
 </template>
@@ -17,9 +18,6 @@ import SearchBar from "../App/Bar.vue"
 export default {
   components: {
     SearchBar
-  },
-  methods: {
-
   },
   methods: {
     async logout() {
@@ -45,22 +43,10 @@ export default {
       @include page-title;
     }
 
-  .actions {
-    display: flex;
-    align-items: center;
-
-    button {
-        @include btn;
-        width: 48px;
-        height: 48px;
-        box-shadow: 0px 1px 1px $dark;
-
-        &:active {
-          box-shadow: none;
-          transform: translateY(1px);
-        }
-      }
-  }
+    .actions {
+      display: flex;
+      align-items: center;
+    }
   }
 
 
