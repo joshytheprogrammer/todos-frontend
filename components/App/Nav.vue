@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import { Icon } from '@iconify/vue2';
+import { SearchCircleIcon } from "@vue-hero-icons/outline"
 import { mapActions } from "vuex"
 
 export default {
   components: {
-    Icon
+    SearchCircleIcon
   },
   methods: {
     ...mapActions({
