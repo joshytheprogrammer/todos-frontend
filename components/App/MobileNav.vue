@@ -1,19 +1,22 @@
 <template>
   <div class="nav">
-    <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
+    <nav>
+      <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
 
-    <div class="actions">
-      <NuxtLink to="/create">Create</NuxtLink>
-      <a href="/logout" @click.prevent="logout">Logout</a>
-    </div>
+      <div class="actions">
+        <NuxtLink to="/create">Create</NuxtLink>
+        <a href="/logout" @click.prevent="logout">Logout</a>
+      </div>
+    </nav>
+    <SearchBar />
   </div>
 </template>
 
 <script>
-
+import SearchBar from "../App/Bar.vue"
 export default {
   components: {
-
+    SearchBar
   },
   methods: {
 
@@ -29,33 +32,37 @@ export default {
 
 <style lang="scss" scoped>
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 14px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 14px;
 
-  box-shadow: 0px 2px 2px $dark;
+    box-shadow: 0px 2px 2px $dark;
 
-  .logo {
-    text-decoration: none;
-    @include page-title;
+    .logo {
+      text-decoration: none;
+      @include page-title;
+    }
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    button {
+        @include btn;
+        width: 48px;
+        height: 48px;
+        box-shadow: 0px 1px 1px $dark;
+
+        &:active {
+          box-shadow: none;
+          transform: translateY(1px);
+        }
+      }
+  }
   }
 
- .actions {
-  display: flex;
-  align-items: center;
 
-   button {
-      @include btn;
-      width: 48px;
-      height: 48px;
-      box-shadow: 0px 1px 1px $dark;
-
-      &:active {
-        box-shadow: none;
-        transform: translateY(1px);
-      }
-    }
- }
 }
 </style>
