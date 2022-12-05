@@ -38,6 +38,19 @@
   border-radius: 10px;
 }
 
+@mixin nav-btn {
+  @include btn;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin: 0 4px;
+}
+
 @mixin label {
   font-weight: 500;
   font-size: 14px;

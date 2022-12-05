@@ -4,20 +4,28 @@
       <NuxtLink to="/" class="logo">JTP todos</NuxtLink>
 
       <div class="actions">
-        <NuxtLink to="/create">Create</NuxtLink>
-        <a href="/logout" @click.prevent="logout">Logout</a>
+        <NuxtLink class="btn" to="/create">
+          <PlusCircleIcon size="2x" />
+        </NuxtLink>
+        <button class="btn" @click="logout">
+          <LogoutIcon size="2x" />
+        </button>
       </div>
     </nav>
-    
+
     <SearchBar />
   </div>
 </template>
 
 <script>
 import SearchBar from "../App/Bar.vue"
+import { PlusCircleIcon } from "@vue-hero-icons/outline"
+import { LogoutIcon } from "@vue-hero-icons/outline"
 export default {
   components: {
-    SearchBar
+    SearchBar,
+    PlusCircleIcon,
+    LogoutIcon
   },
   methods: {
     async logout() {
@@ -46,6 +54,10 @@ export default {
     .actions {
       display: flex;
       align-items: center;
+
+      .btn {
+        @include nav-btn;
+      }
     }
   }
 

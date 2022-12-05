@@ -3,7 +3,7 @@
     <form @submit.prevent="search">
       <input type="search" v-model="search_term" placeholder="Search title, description and tags" class="form-control">
       <button type="submit" title="Search">
-        <SearchCircleIcon size="2.2x" />
+        <SearchCircleIcon size="2x" />
       </button>
     </form>
   </div>
@@ -62,6 +62,7 @@ export default {
 
   @media screen and (max-width: $medium){
     margin: 1rem auto;
+    width: 90%;
   }
 }
 </style>
