@@ -19,34 +19,15 @@ export default {
   },
   data() {
     return {
-      tasks: [
-        {
-          id: 0,
-          title: 'Code extensively for 12 hours. Implement Authentication and things like that'
-        },
-        {
-          id: 1,
-          title: 'Call mum and tell her to get reference letter.'
-        },
-        {
-          id: 2,
-          title: 'Study WORK, ENERGY and POWER. (PHY111)'
-        },
-        {
-          id: 3,
-          title: 'Buy bread from caf.'
-        },
-        {
-          id: 4,
-          title: 'Attend debating meeting today!!!!'
-        },
-        {
-          id: 5,
-          title: 'Test the JTP todos website for bugs and things like that.'
-        },
-      ]
+      tasks: []
     }
   },
+  async fetch() {
+    await this.$axios.get('http://localhost:5000/api/task?user_id='+this.$auth.user._id)
+    .then((res) => {
+      console.log(res)
+    })
+  }
 }
 </script>
 
