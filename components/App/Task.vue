@@ -11,23 +11,30 @@
 </template>
 
 <script>
+import axios from "axios"
+
 export default {
   computed: {
 
   },
   props: ["task"],
-  data() {
-    return {
-      showingID: ''
-    }
-  },
   methods: {
     view(id) {
 
     },
-    complete() {
+    async complete() {
       let verify = confirm("We are about to mark the task - " + this.task.title + " - as completed. This action cannot be reversed.")
-      console.log(verify, this.task._id)
+
+      if(!verify) {return}
+
+      await axios.post('http://localhost:5000/api/task/complete', {
+        task_id: this.task._id
+      }).then((res) => {
+        if(res.status == 200) {
+          this.$router.push('/?completed='+this.task._id)
+        }
+      })
+
     }
   }
 }
