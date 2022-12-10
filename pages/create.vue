@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="create">
-      <!-- <h1>Create new task</h1> -->
+      <h1>Create new task</h1>
       <form @submit.prevent="submitTask">
         <div class="form-group">
           <label for="title">Title</label>
