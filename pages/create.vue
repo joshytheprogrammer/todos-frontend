@@ -9,7 +9,7 @@
         </div>
         <div class="form-group">
           <label for="desc">Description</label>
-          <textarea type="text" name="desc" v-model="task.desc" placeholder="How would you describe it?" required></textarea>
+          <textarea type="text" name="desc" v-model="task.desc" placeholder="How would you describe it?" spellcheck="false" required></textarea>
         </div>
         <div class="form-group">
           <label for="deadline">Deadline</label>
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import axios from "axios"
+
 export default {
   layout: 'user',
   data() {
@@ -36,10 +38,16 @@ export default {
     }
   },
   methods: {
-    submitTask() {
-      // let d = new Date(this.task.date).valueOf()
-
-      console.log(this.task)
+    async submitTask() {
+      await axios.post('http://localhost:5000/api/task/create', {
+        user_id: this.$auth.user._id,
+        task: this.task
+      }).then((res) => {
+        if(res.status == 200) {
+          this.$router.push('/')
+          // dispatch created successfully notification
+        }
+      })
     }
   }
 }

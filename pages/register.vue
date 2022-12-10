@@ -47,11 +47,6 @@ export default {
             this.$router.push('/login')
           }
         })
-
-        // await this.$auth.loginWith('local', {
-        //   email: this.register.email,
-        //   password: this.register.password
-        // })
       }catch(e) {
         console.log(e)
       }
