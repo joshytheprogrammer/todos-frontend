@@ -4,7 +4,7 @@
       <span>{{task.title}}...</span>
     </div>
     <div class="_actions">
-      <a @click.prevent="view(task.id)">View task</a>
+      <a @click.prevent="view(task._id)">View task</a>
       <a @click.prevent="complete(task)">Mark as completed</a>
     </div>
   </div>
@@ -27,7 +27,7 @@ export default {
     },
     complete() {
       let verify = confirm("We are about to mark the task - " + this.task.title + " - as completed. This action cannot be reversed.")
-      console.log(verify, this.task.id)
+      console.log(verify, this.task._id)
     }
   }
 }

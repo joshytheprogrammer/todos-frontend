@@ -2,7 +2,7 @@
   <div class="dashboard">
     <PageTitle :numOftasks="this.tasks.length" />
     <div class="tasks">
-      <Task v-for="task in tasks" :key="task.id" :task="task" />
+      <Task v-for="task in tasks" :key="task._id" :task="task" />
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
   async fetch() {
     await this.$axios.get('http://localhost:5000/api/task?user_id='+this.$auth.user._id)
     .then((res) => {
-      console.log(res)
+      this.tasks.push(...res.data)
     })
   }
 }
